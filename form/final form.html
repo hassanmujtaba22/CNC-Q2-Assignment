@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;   
+    }
+    fieldset{
+        border: none;
+
+    }
+    marquee{
+        color: blue;
+        border: 5px red solid;
+    }
+    legend{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+        font-size: 20px;
+    }
+    div{
+        padding: 2px;
+    }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: rgb(233, 233, 233)
+    }
+    input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: rgb(233, 233, 233)
+    }
+    input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: rgb(233, 233, 233)
+    }
+    input[type=password], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: rgb(233, 233, 233);
+    }
+    button {
+    width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    }
+h5{
+    font-size: 20px;
+    text-align: center;
+    
+}
+        </style>
+    </head>
+    <body>
+        <marquee direction="right"><h1>SIGN-UP PAGE</h1></marquee>
+        <form action="http://www.example.com/subscribe.php" method="get" target="_blank">
+            <div>
+                <fieldset>
+                    <legend id="name"><b>YOUR INFORMATION</b></legend>
+                    <label for="first-name"><b>FIRST NAME:</b></label>
+                    <input  id="first-name" type="text" name="f-name" placeholder="First Name" size="15" required>
+                    <label for="second-name"><b>SECOND NAME:</b></label>
+                    <input id="second-name" type="text" name="s-name" placeholder="Second Name" size="15" required>
+                    <div>
+                        <label for="email"><p><b>EMAIL:</b></p></label>
+                        <input id="email" type="email" name="email" placeholder="Email Address" size="30" maxlength="30" required>
+                        <label for="number"><p><b>CELL NUMBER:</b></p></label>
+                        <input id="number" type="tel" name="number" placeholder="Cell number" size="25" maxlength="11" required>
+                    </div>
+                    <div>
+                        <label id="country"> <b>COUNTRY:</b><br>
+                            <select name="country" size="1">
+                            <option value="Pakistan" selected="selected">Pakistan</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="China">China</option>
+                            <option value="Turkey">Turkey</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="city"><b>CITY:</b></label><br>
+                        <input id="city" type="text" name="city" placeholder="City Name" size="30" required>
+                    </div>
+                    <div>
+                        <p><b>GENDER:</b></p>
+                        <label for="male">Male</label>
+                        <input id="male" type="radio" value="male" name="gender" checked>
+                        <label for="female">Female</label>
+                        <input id="female" type="radio" value="female" name="gender">
+                    </div>
+                </fieldset>
+            </div>
+
+            
+            <div>
+                <label for="password"><p><b>PASSWORD:</b></p></label>
+                <input id="password" type="password" name="password" placeholder="Enter your Password" size="30" maxlength="12" required>
+            </div>
+            <div>
+                <label for="remember-me">Remember-me</label>
+                <input type="checkbox" value="remember-me" name="remember-me" checked>
+            </div>
+            <div>
+                <label for="picture"><b>Upload your profile Picture:</b></label>
+                <input id="picture" type="file" name="profile-pic" required>
+            </div>
+            <div id="submit">
+                <button type="submit" value="submit"><span id="submit"><h5>SUBMIT</h5></span></button>
+            </div>
+        </form>
+    </body>
+</html>
